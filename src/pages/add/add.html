@@ -1,0 +1,92 @@
+<!--
+  Generated template for the AddPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Bussiness Places</ion-title>
+  </ion-navbar>
+
+
+</ion-header>
+
+
+<ion-content padding>
+
+
+
+      <ion-item>
+        <ion-label floating>Business ID</ion-label>
+        <ion-input [(ngModel)]="Business_ID"></ion-input>
+      </ion-item>
+    
+      <ion-item>
+        <ion-label floating>Business Name</ion-label>
+        <ion-input [(ngModel)]="Business_Name"></ion-input>
+      </ion-item>
+    
+      <ion-item>
+        <ion-label floating> OwnerName</ion-label>
+        <ion-input [(ngModel)]="OwnerName"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating> Email</ion-label>
+        <ion-input [(ngModel)]="Email"></ion-input>
+      </ion-item>
+    
+      <ion-item>
+        <ion-label floating>Address</ion-label>
+        <ion-input  [(ngModel)]="Address"></ion-input>
+      </ion-item>
+      
+      <ion-item>
+          <ion-label floating>Register Date</ion-label>
+          <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="date"></ion-datetime>
+        </ion-item>
+
+
+
+      <ion-item>
+          <ion-label>Business Category</ion-label>
+          <ion-select [(ngModel)]="business_category">
+            <ion-option value="Groceries">Groceries</ion-option>
+            <ion-option value="FoodFactorie">Food factories</ion-option>
+            <ion-option value="SnackBars">Snack Bars</ion-option>
+            <ion-option value="Bakeries">Bakeries</ion-option>
+            <ion-option value="Hotel">Hostel</ion-option>
+            <ion-option value="SuperMarket">Super Market</ion-option>
+            <ion-option value="Other">Other</ion-option>
+          </ion-select>
+        </ion-item>
+
+        
+
+
+    
+      <ion-item>
+        <ion-label floating>Telephone Numeber 1</ion-label>
+        <ion-input [(ngModel)]="TelephoneNumeber1"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>Telephone Numeber 2</ion-label>
+        <ion-input [(ngModel)]="TelephoneNumeber2"></ion-input>
+      </ion-item>
+      
+
+
+      <button ion-button (click)="AddBs(Business_ID,Business_Name,OwnerName,Email,Address,date,business_category,TelephoneNumeber1,TelephoneNumeber2)">Save</button>
+      
+     
+      <ion-item *ngFor="let asds of asd;" >
+
+        <h2>BusinessID:  {{asds.Business_ID}}</h2><br/>   -->
+        {{asds.Address}} <br/> 
+        {{asds.business_category}}
+      </ion-item>
+    
+    </ion-content>

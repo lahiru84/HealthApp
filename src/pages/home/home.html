@@ -1,0 +1,57 @@
+<ion-header>
+  <ion-navbar >
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Public Health Guide </ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding class="bg-image" >
+     <h2>Home</h2>
+     
+     <div class="header-banner">
+      <ion-slides class="home-slide" autoplay="3000" loop>
+        <ion-slide>
+          <img src="../../assets/0001.jpg" alt="">
+        </ion-slide>
+        <ion-slide>
+          <img src="../../assets/0002.jpg" alt="">
+        </ion-slide>
+        <ion-slide>
+          <img src="../../assets/0003.jpg" alt="">
+        </ion-slide>
+        <ion-slide>
+          <img src="../../assets/0004.jpg" alt="">
+        </ion-slide>
+        <ion-slide>
+          <img src="../../assets/0005.jpg" alt="">
+        </ion-slide>
+     </ion-slides>
+  </div>  
+
+
+  <ion-grid>
+      <ion-row>
+        <ion-col>
+         <ion-card  (click)="openItem()">
+            <img src="../../assets/phisin.jpg"/>
+         </ion-card>
+        </ion-col>
+        <ion-col>
+         <ion-card (click)="openItem()">
+            <img src="../../assets/fruit.jpg"/>
+         </ion-card>
+        </ion-col>
+        <ion-col>
+         <ion-card (click)="openItem()" >
+            <img src="../../assets/fruit.jpg"/>
+         </ion-card>
+        </ion-col>
+        
+      </ion-row>
+    </ion-grid>
+
+
+</ion-content>

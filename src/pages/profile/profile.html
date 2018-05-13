@@ -1,0 +1,38 @@
+<!--
+  Generated template for the ProfilePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>profile</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-item>
+    <ion-label floating>First name</ion-label>
+    <ion-input type="text" [(ngModel)]="displayFirstName" disabled="true"></ion-input>
+  </ion-item>
+
+  <ion-item>
+      <ion-label floating>Last name</ion-label>
+      <ion-input type="text" [(ngModel)]="displayLastName" disabled="true"></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-label floating>NIC</ion-label>
+        <ion-input type="text" [(ngModel)]="dispNIC" disabled="true"></ion-input>
+      </ion-item>
+  
+      <ion-item>
+          <ion-label floating>PHI ID</ion-label>
+          <ion-input type="text" [(ngModel)]="dispPHIID" disabled="true"></ion-input>
+        </ion-item>
+
+
+</ion-content>

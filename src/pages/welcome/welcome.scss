@@ -1,0 +1,70 @@
+page-welcome {
+    .bg-image0{
+        background-image: url('../assets/welcomeImage.jpg');
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        background-position: bottom;
+        
+    }
+    .scroll-content{
+       align-content: center;
+       display:fixed;
+       flex-direction: column;
+       justify-content: center;
+       text-align: center;
+    }
+
+    ion-card.card{
+        box-shadow: none;
+        background: rgba(0,0,0,0.4);
+        border-radius: 5px;
+    
+
+    }
+   
+    p,
+    ion-card-header.card-header{
+      color:rgb(243, 243, 243);
+    }
+
+    .list > .item-block:first-child{
+        border: medium none;
+    }
+    .item{
+        margin-bottom: 10px;
+        background: rgba(255, 255, 255, 0.4);
+        border:medium none;
+
+        .text-input,{
+            color:#fff;
+        }
+        *:-moz-placeholder{
+            color:#fff!important;
+        }
+        
+        *:-ms-input-placeholder{
+            color:#fff!important;
+        }
+
+        *::-webkit-input-placeholder{
+            color:#fff!important;
+        }
+
+        input::-moz-placeholder{
+            color:#fff!important;
+        }
+        input:-moz-placeholder{
+            color:#fff!important;
+        }
+
+    }
+
+    .bt{
+        position: absolute;
+        bottom: 0;
+        
+    }    
+ 
+     
+}

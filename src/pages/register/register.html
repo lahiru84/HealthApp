@@ -1,0 +1,50 @@
+<!--
+  Generated template for the RegisterPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Register</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+<ion-item>
+  <ion-label floating >First Name</ion-label>
+  <ion-input  type="text" [(ngModel)]="signupData.fname"></ion-input>
+</ion-item>
+
+<ion-item>
+  <ion-label floating >Last Name</ion-label>
+  <ion-input type="text" [(ngModel)]="signupData.lname"></ion-input>
+</ion-item>
+
+<ion-item>
+  <ion-label floating >PHI Registration Number</ion-label>
+  <ion-input type="text" [(ngModel)]="signupData.phiID"></ion-input>
+</ion-item>
+
+<ion-item>
+  <ion-label floating >NIC/Passport Number</ion-label>
+  <ion-input type="text" [(ngModel)]="signupData.nic"></ion-input>
+</ion-item>
+
+<ion-item>
+  <ion-label floating >Password</ion-label>
+  <ion-input type="password" [(ngModel)]="signupData.password"></ion-input>
+</ion-item>
+
+<ion-item>
+  <ion-label floating >Confirm Password</ion-label>
+  <ion-input type="password" [(ngModel)]="signupData.passwordRetype"></ion-input>
+</ion-item>
+
+  <button class="signup" full ion-button (click)="signup()" [disabled]="!signupData.fname || !signupData.lname ||!signupData.phiID || !signupData.nic " >Sign Up</button>
+
+
+</ion-content>

@@ -1,0 +1,79 @@
+<!--
+  Generated template for the EditbusPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Update Business Places</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-item>
+    <ion-label floating>Business ID</ion-label>
+    <ion-input [(ngModel)]="BusPlace.Business_ID"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>Business Name</ion-label>
+    <ion-input [(ngModel)]="BusPlace.Business_Name"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating> OwnerName</ion-label>
+    <ion-input [(ngModel)]="BusPlace.OwnerName"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating> Email</ion-label>
+    <ion-input [(ngModel)]="BusPlace.Email"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>Address</ion-label>
+    <ion-input [(ngModel)]="BusPlace.Address"></ion-input>
+  </ion-item>
+  
+  <ion-item>
+      <ion-label floating>Register Date</ion-label>
+      <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="BusPlace.date"></ion-datetime>
+    </ion-item>
+
+
+
+  <ion-item>
+      <ion-label>Business Category</ion-label>
+      <ion-select [(ngModel)]="BusPlace.business_category">
+        <ion-option value="Groceries">Groceries</ion-option>
+        <ion-option value="FoodFactorie">Food factories</ion-option>
+        <ion-option value="SnackBars">Snack Bars</ion-option>
+        <ion-option value="Bakeries">Bakeries</ion-option>
+        <ion-option value="Hotel">Hostel</ion-option>
+        <ion-option value="SuperMarket">Super Market</ion-option>
+        <ion-option value="Other">Other</ion-option>
+      </ion-select>
+    </ion-item>
+
+    
+
+
+
+  <ion-item>
+    <ion-label floating>Telephone Numeber 1</ion-label>
+    <ion-input [(ngModel)]="BusPlace.TelephoneNumeber1"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>Telephone Numeber 2</ion-label>
+    <ion-input [(ngModel)]="BusPlace.TelephoneNumeber2"></ion-input>
+  </ion-item>
+  
+
+
+  <button ion-button (click)="updatePerson(BusPlace.Business_ID,BusPlace.Business_Name,BusPlace.OwnerName,BusPlace.Email,BusPlace.Address,BusPlace.date,BusPlace.business_category,BusPlace.TelephoneNumeber1,BusPlace.TelephoneNumeber2)" >Update</button>
+</ion-content>

@@ -1,0 +1,81 @@
+<!--
+  Generated template for the PeditPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>pedit</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-item>
+    <ion-label floating>Patient Name</ion-label>
+    <ion-input [(ngModel)]="P.PName"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label >Gender</ion-label>
+    <ion-select [(ngModel)]="P.sex">
+      <ion-option value="male">Male</ion-option>
+      <ion-option value="female">Female</ion-option>
+    </ion-select>
+  </ion-item> 
+
+  <ion-item>
+    <ion-label>Birthday</ion-label>
+    <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="P.myDate"></ion-datetime>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label floating>Address</ion-label>
+    <ion-textarea [(ngModel)]="P.Add"></ion-textarea>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>Telephone Number</ion-label>
+    <ion-input [(ngModel)]="P.tp"></ion-input>
+  </ion-item>
+
+  <ion-item>
+      <ion-label>Disease</ion-label>
+      <ion-select [(ngModel)]="P.sick">
+        <ion-option value="Dengue">Dengue</ion-option>
+        <ion-option value="Malaria">Malaria</ion-option>
+        <ion-option value="Elephantiasis">Elephantiasis</ion-option>
+        <ion-option value="Chicken-pox">Chicken-pox</ion-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Illness level</ion-label>
+      <ion-select [(ngModel)]="P.ill">
+        <ion-option value="Low">Low</ion-option>
+        <ion-option value="Medium">Medium</ion-option>
+        <ion-option value="Critical">Critical</ion-option>
+        <ion-option value="Died">Died</ion-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+        <ion-label>Blood Group</ion-label>
+        <ion-select [(ngModel)]="P.blood">
+          <ion-option value="O+">O+</ion-option>
+          <ion-option value="O-">O-</ion-option>
+          <ion-option value="A+">A+</ion-option>
+          <ion-option value="A-">A-</ion-option>
+          <ion-option value="B+">B+</ion-option>
+          <ion-option value="B-">B-</ion-option>
+          <ion-option value="AB+">AB+</ion-option>
+          <ion-option value="AB-">AB-</ion-option>
+          
+        </ion-select>
+      </ion-item>
+    
+   <button ion-button>Submit</button>
+</ion-content>
